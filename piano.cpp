@@ -100,18 +100,18 @@ void Piano::initializeSoundEffects()
     soundEffectAs->setSource(QUrl("qrc:/note/As.wav"));
     soundEffectB->setSource(QUrl("qrc:/note/B.wav"));
 
-    soundEffectc->setSource(QUrl("qrc:/note/c.wav"));
-    soundEffectcs->setSource(QUrl("qrc:/note/cs.wav"));
-    soundEffectd->setSource(QUrl("qrc:/note/d.wav"));
-    soundEffectds->setSource(QUrl("qrc:/note/ds.wav"));
-    soundEffecte->setSource(QUrl("qrc:/note/e.wav"));
-    soundEffectf->setSource(QUrl("qrc:/note/f.wav"));
-    soundEffectfs->setSource(QUrl("qrc:/note/fs.wav"));
-    soundEffectg->setSource(QUrl("qrc:/note/g.wav"));
-    soundEffectgs->setSource(QUrl("qrc:/note/gs.wav"));
-    soundEffecta->setSource(QUrl("qrc:/note/a.wav"));
-    soundEffectas->setSource(QUrl("qrc:/note/as.wav"));
-    soundEffectb->setSource(QUrl("qrc:/note/b.wav"));
+    soundEffectc->setSource(QUrl("qrc:/note/cc.wav"));
+    soundEffectcs->setSource(QUrl("qrc:/note/ccs.wav"));
+    soundEffectd->setSource(QUrl("qrc:/note/dd.wav"));
+    soundEffectds->setSource(QUrl("qrc:/note/dds.wav"));
+    soundEffecte->setSource(QUrl("qrc:/note/ee.wav"));
+    soundEffectf->setSource(QUrl("qrc:/note/ff.wav"));
+    soundEffectfs->setSource(QUrl("qrc:/note/ffs.wav"));
+    soundEffectg->setSource(QUrl("qrc:/note/gg.wav"));
+    soundEffectgs->setSource(QUrl("qrc:/note/ggs.wav"));
+    soundEffecta->setSource(QUrl("qrc:/note/aa.wav"));
+    soundEffectas->setSource(QUrl("qrc:/note/aas.wav"));
+    soundEffectb->setSource(QUrl("qrc:/note/bb.wav"));
 
     soundEffectc1->setSource(QUrl("qrc:/note/c1.wav"));
     soundEffectc1s->setSource(QUrl("qrc:/note/c1s.wav"));
@@ -160,7 +160,7 @@ void Piano::on_c1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectC, "C");
     else if (high == -1)
-        playSoundEffect(soundEffectC, "c");
+        playSoundEffect(soundEffectC, "cc");
     else if (high == 0)
         playSoundEffect(soundEffectC, "c1");
     else if (high == 1)
@@ -178,7 +178,7 @@ void Piano::on_c1s_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectCs, "Cs");
     else if (high == -1)
-        playSoundEffect(soundEffectCs, "cs");
+        playSoundEffect(soundEffectCs, "ccs");
     else if (high == 0)
         playSoundEffect(soundEffectCs, "c1s");
     else if (high == 1)
@@ -196,7 +196,7 @@ void Piano::on_d1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectD, "D");
     else if (high == -1)
-        playSoundEffect(soundEffectD, "d");
+        playSoundEffect(soundEffectD, "dd");
     else if (high == 0)
         playSoundEffect(soundEffectD, "d1");
     else if (high == 1)
@@ -214,7 +214,7 @@ void Piano::on_d1s_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectDs, "Ds");
     else if (high == -1)
-        playSoundEffect(soundEffectDs, "ds");
+        playSoundEffect(soundEffectDs, "dds");
     else if (high == 0)
         playSoundEffect(soundEffectDs, "d1s");
     else if (high == 1)
@@ -232,7 +232,7 @@ void Piano::on_e1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectE, "E");
     else if (high == -1)
-        playSoundEffect(soundEffectE, "e");
+        playSoundEffect(soundEffectE, "ee");
     else if (high == 0)
         playSoundEffect(soundEffectE, "e1");
     else if (high == 1)
@@ -250,7 +250,7 @@ void Piano::on_f1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectF, "F");
     else if (high == -1)
-        playSoundEffect(soundEffectF, "f");
+        playSoundEffect(soundEffectF, "ff");
     else if (high == 0)
         playSoundEffect(soundEffectF, "f1");
     else if (high == 1)
@@ -268,7 +268,7 @@ void Piano::on_f1s_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectFs, "Fs");
     else if (high == -1)
-        playSoundEffect(soundEffectFs, "fs");
+        playSoundEffect(soundEffectFs, "ffs");
     else if (high == 0)
         playSoundEffect(soundEffectFs, "f1s");
     else if (high == 1)
@@ -286,7 +286,7 @@ void Piano::on_g1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectG, "G");
     else if (high == -1)
-        playSoundEffect(soundEffectG, "g");
+        playSoundEffect(soundEffectG, "gg");
     else if (high == 0)
         playSoundEffect(soundEffectG, "g1");
     else if (high == 1)
@@ -304,7 +304,7 @@ void Piano::on_g1s_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectGs, "Gs");
     else if (high == -1)
-        playSoundEffect(soundEffectGs, "gs");
+        playSoundEffect(soundEffectGs, "ggs");
     else if (high == 0)
         playSoundEffect(soundEffectGs, "g1s");
     else if (high == 1)
@@ -322,7 +322,7 @@ void Piano::on_a1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectA, "A");
     else if (high == -1)
-        playSoundEffect(soundEffectA, "a");
+        playSoundEffect(soundEffectA, "aa");
     else if (high == 0)
         playSoundEffect(soundEffectA, "a1");
     else if (high == 1)
@@ -340,7 +340,7 @@ void Piano::on_a1s_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectAs, "As");
     else if (high == -1)
-        playSoundEffect(soundEffectAs, "as");
+        playSoundEffect(soundEffectAs, "aas");
     else if (high == 0)
         playSoundEffect(soundEffectAs, "a1s");
     else if (high == 1)
@@ -358,7 +358,7 @@ void Piano::on_b1_clicked()
     else if (high == -2)
         playSoundEffect(soundEffectB, "B");
     else if (high == -1)
-        playSoundEffect(soundEffectB, "b");
+        playSoundEffect(soundEffectB, "bb");
     else if (high == 0)
         playSoundEffect(soundEffectB, "b1");
     else if (high == 1)
