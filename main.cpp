@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     Piano w;
+    w.setStyleSheet("background-color: #F5F5DC;");
     w.show();
 
     return a.exec();

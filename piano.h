@@ -5,11 +5,15 @@
 #include "ui_piano.h"
 #include <QSound>
 #include <QSoundEffect>
-#include<QSpinBox>
+#include <QSpinBox>
 #include <QVBoxLayout>
 #include <QMessageBox>
+#include <QList>
+#include <QPair>
+#include <QTime>
+#include <QTimer>
 namespace Ui {
-class Piano;
+class piano;
 }
 
 class Piano : public QMainWindow
@@ -56,11 +60,22 @@ private slots:
     void on_b1_clicked();
 
 
+    void on_playButton_clicked();
+
+    void on_recordButton_clicked();
+
+    void on_deleteButton_clicked();
+    void startPlayback();
+    void stopPlayback();
+    void playNextRecordedKey();
+    void updateKeys(int value); // Slot to update keys
+
 private:
-    Ui::Piano *ui;
+    Ui::piano *ui;
     QSoundEffect *soundEffectA2;
     QSoundEffect *soundEffectA2s;
     QSoundEffect *soundEffectB2;
+    QSoundEffect *soundEffectc5;
     QSoundEffect *soundEffectC1;
     QSoundEffect *soundEffectC1s;
     QSoundEffect *soundEffectD1;
@@ -145,9 +160,19 @@ private:
     QSoundEffect *soundEffecta4;
     QSoundEffect *soundEffecta4s;
     QSoundEffect *soundEffectb4;
-    QSoundEffect *soundEffectc5;
     void initializeSoundEffects();
     void playSoundEffect(QSoundEffect *soundEffect, const QString &baseName);
+    void setKeyLabels(const QStringList &labels); // Helper function to set key labels
+    QStringList generateKeyLabels(int high); // Function to generate key labels based on high value
+    bool isPause;
+    bool isRecord;
+    QList<QPair<QTime, QString>> recordedKeys;
+    void recordKeyPress(const QString &key);
+    QTimer *playbackTimer;
+    int playbackIndex;
+    QTime playbackStartTime;
+    QTime recordStartTime;
+    QTime pauseTime;
 };
 
 #endif // PIANO_H

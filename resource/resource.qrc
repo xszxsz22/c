@@ -90,4 +90,9 @@
         <file>Gs.wav</file>
         <file>resource.qrc</file>
     </qresource>
+    <qresource prefix="/picture">
+        <file>pause.svg</file>
+        <file>play.svg</file>
+        <file>delete.svg</file>
+    </qresource>
 </RCC>
